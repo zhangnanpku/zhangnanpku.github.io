@@ -11,13 +11,24 @@ profile:
     <p>Office 417, Building C</p>
     <p>579 Guoquan Road</p>
     <p>Fudan University, Handan Campus</p>
-selected_papers: true
+selected_papers: false
 social: true
 announcements:
   enabled: false
 latest_posts:
   enabled: false
 ---
+
+<style>
+  /* Homepage body text and profile details. */
+  .post > article > .clearfix { font-size: 1.125rem; line-height: 1.75; }
+  .post > article > .clearfix p { font-size: inherit; }
+  .post-header .desc { font-size: 1.125rem; }
+  .profile .more-info { font-size: 1rem; }
+  @media (max-width: 767px) {
+    .post > article > .clearfix { font-size: 1.0625rem; line-height: 1.7; }
+  }
+</style>
 
 I am affiliated with the [Institute of Science and Technology for Brain-Inspired Intelligence](https://istbi.fudan.edu.cn/) and the [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), where I serve as Director of the Professional Training Program.
 

@@ -11,8 +11,6 @@ My research has been supported in part by the National Natural Science Foundatio
 
 *An asterisk (*) marks a student under my supervision; a dagger (†) marks equal contribution.*
 
-{% include bib_search.liquid %}
-
 <div class="publications">
 {% bibliography %}
 </div>
