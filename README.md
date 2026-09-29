@@ -4,12 +4,12 @@ This is a conversion of the supplied `website.zip` into the [al-folio](https://g
 
 ## Content
 
-- `_pages/about.md`: biography, portrait, affiliation, contact, selected publications.
-- `_bibliography/papers.bib`: 13 publications converted from the supplied research page. Update this single file to add papers; `selected = {true}` controls the home page selection. Author markers `*` and `†` were carried over from the old list.
+- `_pages/about.md`: biography, portrait, affiliation, contact.
+- `_bibliography/papers.bib`: publications converted from the supplied research page. Update this single file to add papers; `selected = {true}` controls the home page selection. Author markers `*` and `†` were carried over from the old list.
 - `_pages/teaching.md` and `_pages/DATA*.html`: teaching overview and three existing course outlines.
 - `_pages/group.md`: graduate and undergraduate students.
 - `_data/socials.yml`: email. Add verified Google Scholar, ORCID, and other profiles when ready.
-- `assets/img/prof_pic.jpg`: existing portrait.
+- `assets/img/prof_pic.jpg`: portrait.
 
 Legacy paths `/research/index-research.html` and `/teaching/index-teaching.html` have redirect pages. The `/cv/` page retains the original "available upon request" message. Two lecture video URLs in the original site had no files in the archive, so the topic names are retained without broken links.
 

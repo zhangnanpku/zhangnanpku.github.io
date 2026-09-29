@@ -30,7 +30,7 @@ latest_posts:
   }
 </style>
 
-I am affiliated with the [Institute of Science and Technology for Brain-Inspired Intelligence](https://istbi.fudan.edu.cn/) and the [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/), where I serve as Director of the Professional Training Program.
+I was affiliated with the [Institute of Science and Technology for Brain-Inspired Intelligence](https://istbi.fudan.edu.cn/) and the [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/).
 
 My research lies at the intersection of statistics and artificial intelligence. I work on nonparametric methods, statistical machine learning, and functional data analysis. I am particularly interested in connecting noisy data with physical mechanisms governed by differential equations, including applications in computational neuroscience.
 
