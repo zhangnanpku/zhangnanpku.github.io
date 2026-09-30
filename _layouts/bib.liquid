@@ -214,7 +214,9 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {% if inline_arxiv %}
-        Preprint, {{ entry.year }}. <a href="https://arxiv.org/abs/{{ entry.arxiv | escape }}" style="white-space: nowrap;">Arxiv link</a>
+        Preprint, {{ entry.year }}. <a href="https://arxiv.org/abs/{{ entry.arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv" style="display: inline-block; vertical-align: baseline; text-decoration: none;">
+          <span class="ai ai-arxiv ai-lg" aria-hidden="true" style="color: #b31b1b;"></span>
+        </a>
       {% else %}
         {{ periodical | strip }}
       {% endif %}
