@@ -9,6 +9,8 @@ nav_order: 3
 
 ### Graduate students
 
+<div class="table-wrap group-table" markdown="1" role="region" aria-label="Student placements" tabindex="0">
+
 | Name | Cohort | Placement |
 |:---|:---|:---|
 | Youtang He | SDS-26 | Current student |
@@ -18,9 +20,13 @@ nav_order: 3
 | Yunlu Chen | SDS-18 | PhD student, Northwestern University; Now Meta |
 | Jichen Yang | SDS-18 | Wanjia Asset |
 
+</div>
+
 
 
 ### Undergraduate students
+
+<div class="table-wrap group-table" markdown="1" role="region" aria-label="Student placements" tabindex="0">
 
 | Name          | Cohort  | Placement                                                    |
 | :------------ | :-----: | :----------------------------------------------------------- |
@@ -36,3 +42,5 @@ nav_order: 3
 | Rentian Yao   | SDS-15  | XiYuan Research Program; PhD student, University of Illinois Urbana-Champaign; Now Assistant Professor at University of South Carolina |
 | Tianning Xu   | MANA-14 | PhD student, University of Illinois Urbana-Champaign; Now Waymo |
 | Runbing Zheng | MATH-14 | XiYuan Research Program; PhD student, North Carolina State University; Now postdoc at Stanford |
+
+</div>

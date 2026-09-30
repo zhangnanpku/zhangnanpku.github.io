@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Associate Professor of Statistics
+subtitle: ""
 profile:
   align: right
   image: prof_pic.jpg

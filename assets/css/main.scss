@@ -116,3 +116,51 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.0625rem;
   }
 }
+
+/* Shared tables: inherit site typography and size columns to their content. */
+.post > article .table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+}
+
+.post > article table {
+  width: auto;
+  max-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.post > article table th,
+.post > article table td {
+  padding: 0.65rem 1.1rem 0.65rem 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.post > article table th:last-child,
+.post > article table td:last-child {
+  padding-right: 0;
+}
+
+/* Course names and placements may wrap; other short fields stay on one line. */
+.post > article .course-table td:first-child,
+.post > article .group-table td:nth-child(3),
+.post > article table td.wrap {
+  white-space: normal;
+  overflow-wrap: break-word;
+  min-width: 18rem;
+  max-width: 30rem;
+}
+
+@media (max-width: 767px) {
+  .post > article .course-table td:first-child,
+  .post > article .group-table td:nth-child(3),
+  .post > article table td.wrap {
+    min-width: 16rem;
+    max-width: 22rem;
+  }
+}
