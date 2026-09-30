@@ -58,3 +58,49 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
 }
+
+/* Shared typography: about, research, teaching, group */
+.post > article {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* Keep component text consistent with the page body */
+.post > article p,
+.post > article li,
+.post > article table,
+.post > article .publications .title,
+.post > article .publications .author,
+.post > article .publications .periodical {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Paragraph and publication spacing */
+.post > article p {
+  margin-bottom: 1rem;
+}
+
+.post > article .publications ol.bibliography > li {
+  margin-bottom: 1.5rem;
+}
+
+/* Page subtitle and profile details */
+.post-header .desc {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.profile .more-info {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .post > article,
+  .post-header .desc {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+}

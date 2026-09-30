@@ -19,16 +19,6 @@ latest_posts:
   enabled: false
 ---
 
-<style>
-  /* Homepage body text and profile details. */
-  .post > article > .clearfix { font-size: 1.125rem; line-height: 1.75; }
-  .post > article > .clearfix p { font-size: inherit; }
-  .post-header .desc { font-size: 1.125rem; }
-  .profile .more-info { font-size: 1rem; }
-  @media (max-width: 767px) {
-    .post > article > .clearfix { font-size: 1.0625rem; line-height: 1.7; }
-  }
-</style>
 
 I was affiliated with the [Institute of Science and Technology for Brain-Inspired Intelligence](https://istbi.fudan.edu.cn/) and the [School of Data Science](https://sds.fudan.edu.cn/) at [Fudan University](https://www.fudan.edu.cn/).
 
