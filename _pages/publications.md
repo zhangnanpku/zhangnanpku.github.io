@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Publications
 description: Publications in statistics, machine learning, functional data analysis, and scientific modeling.
 nav: true
 nav_order: 1

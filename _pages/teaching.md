@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Courses taught by Nan Zhang at Fudan University and elsewhere.
+title: Teaching
+description: ""
 nav: true
 nav_order: 2
 _styles: |
@@ -15,7 +15,7 @@ _styles: |
   }
 ---
 
-## Fudan University
+### Fudan University
 
 <div class="teaching-table-wrap" role="region" aria-label="Fudan University courses" tabindex="0">
 <table class="teaching-table">
@@ -29,8 +29,7 @@ _styles: |
 </tbody>
 </table>
 </div>
-
-## Other teaching
+### Other
 
 - **Advanced Statistics Theory** (DDA6030), graduate guest lecturer, CUHK-Shenzhen, Spring 2022 and 2023.
 - **Predictive Modeling**, professional training tutorial at UAES, Fall 2020–2024.

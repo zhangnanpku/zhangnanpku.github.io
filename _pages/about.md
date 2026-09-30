@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Statistics · Machine Learning · Scientific Modeling
 profile:
@@ -11,7 +11,7 @@ profile:
     <p>Office 417, Building C</p>
     <p>579 Guoquan Road</p>
     <p>Fudan University, Handan Campus</p>
-selected_papers: false
+selected_papers: true
 social: true
 announcements:
   enabled: false
