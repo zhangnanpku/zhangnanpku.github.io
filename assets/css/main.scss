@@ -48,9 +48,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-/* Keep publication titles distinct from author and journal lines. */
+/* Publication titles: bold and theme-colored, including titles without links. */
 .publications ol.bibliography li .title {
   font-weight: 700;
+  color: var(--global-theme-color);
 }
 
 @media (max-width: 575px) {
@@ -97,24 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile */
-@media (max-width: 767px) {
-  .post > article,
-  .post-header .desc {
-    font-size: 1.0625rem;
-    line-height: 1.7;
-  }
-}
 
 /* Navigation typography */
 #navbar .navbar-nav .nav-link {
   font-size: 1.125rem;
   line-height: 1.5;
-}
-
-@media (max-width: 767px) {
-  #navbar .navbar-nav .nav-link {
-    font-size: 1.0625rem;
-  }
 }
 
 /* Shared tables: inherit site typography and size columns to their content. */
@@ -130,8 +118,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   table-layout: auto;
   border-collapse: collapse;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 .post > article table th,
@@ -156,7 +142,18 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 30rem;
 }
 
+/* Shared mobile adjustments */
 @media (max-width: 767px) {
+  .post > article,
+  .post-header .desc {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  #navbar .navbar-nav .nav-link {
+    font-size: 1.0625rem;
+  }
+
   .post > article .course-table td:first-child,
   .post > article .group-table td:nth-child(3),
   .post > article table td.wrap {
