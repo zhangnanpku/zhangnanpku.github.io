@@ -175,6 +175,11 @@
       {% endif %}
     </div>
 
+    {% assign inline_arxiv = false %}
+    {% if entry.key == "nanshan2026online" and entry.arxiv != blank %}
+      {% assign inline_arxiv = true %}
+    {% endif %}
+
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
@@ -208,7 +213,11 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
-      {{ periodical | strip }}
+      {% if inline_arxiv %}
+        Preprint, {{ entry.year }}. <a href="https://arxiv.org/abs/{{ entry.arxiv | escape }}" style="white-space: nowrap;">Arxiv link</a>
+      {% else %}
+        {{ periodical | strip }}
+      {% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
@@ -224,7 +233,7 @@
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
-      {% if entry.arxiv %}
+      {% if entry.arxiv and inline_arxiv == false %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.hal %}
