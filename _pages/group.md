@@ -2,12 +2,10 @@
 layout: page
 permalink: /group/
 title: Group
-description: ""
+description: Talented students I am fortunate to work with.
 nav: true
 nav_order: 3
 ---
-
-I have been fortunate to work with many talented students. The affiliations below reflect the information on my previous website; please contact me with updates.
 
 ### Graduate students
 
@@ -20,7 +18,9 @@ I have been fortunate to work with many talented students. The affiliations belo
 | Yunlu Chen | SDS-18 | PhD student, Northwestern University; Now Meta |
 | Jichen Yang | SDS-18 | Wanjia Asset |
 
-## Undergraduate students
+
+
+### Undergraduate students
 
 | Name          | Cohort  | Placement                                                    |
 | :------------ | :-----: | :----------------------------------------------------------- |

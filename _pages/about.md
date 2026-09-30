@@ -2,15 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: Statistics · Machine Learning · Scientific Modeling
+subtitle: Associate Professor of Statistics
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Office 417, Building C</p>
+    <p>C417, Francis and Rose Yuen Campus</p>
     <p>579 Guoquan Road</p>
-    <p>Fudan University, Handan Campus</p>
+    <p>Fudan University</p>
 selected_papers: true
 social: true
 announcements:
