@@ -36,6 +36,6 @@ My research lies at the intersection of statistics and artificial intelligence. 
 
 I earned my Ph.D. in Statistics from [Texas A&M University](https://www.tamu.edu/) under the supervision of [Jianhua Huang](https://sds.cuhk.edu.cn/en/teacher/470). I then held a postdoctoral research position before joining Fudan. I received a B.S. in Mathematics and a B.A. in Economics from [Peking University](https://www.pku.edu.cn/).
 
-I welcome motivated students to join the group. If you are interested, please [email me](mailto:zhangnan@fudan.edu.cn) with your CV and a brief description of your research interests.
+I welcome motivated students to join the group. If you are interested, please [email me](mailto:zhangnanku@gmail.com) with your CV and a brief description of your research interests.
 
 [Research](/research/) · [Teaching](/teaching/) · [Group](/group/)
