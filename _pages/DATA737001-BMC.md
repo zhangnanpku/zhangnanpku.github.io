@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bayesian Modeling and Computation
+title: ""
 permalink: /teaching/DATA737001-BMC.html
 nav: false
 ---

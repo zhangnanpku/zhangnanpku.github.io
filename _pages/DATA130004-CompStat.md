@@ -5,8 +5,6 @@ permalink: /teaching/DATA130004-CompStat.html
 nav: false
 ---
 
-## Computational Statistics
-
 ### Instructor
 
 - Nan Zhang
