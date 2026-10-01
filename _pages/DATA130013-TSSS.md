@@ -5,8 +5,6 @@ permalink: /teaching/DATA130013-TSSS.html
 nav: false
 ---
 
-## Time Series and Spatial Statistics
-
 ### Instructor
 
 - Nan Zhang
