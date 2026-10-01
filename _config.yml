@@ -7,14 +7,14 @@ first_name: Nan
 middle_name:
 last_name: Zhang
 contact_note: >
-  Prospective students: please email a short introduction and your CV.
+  ""
 description: >
   Nan Zhang is a statistician at Fudan University working on nonparametric methods, statistical machine learning, functional data analysis, and scientific modeling.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-keywords: Nan Zhang, Fudan University, statistics, functional data analysis, scientific modeling
+keywords: Nan Zhang, statistics, functional data analysis, scientific modeling
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: fudan-favicon.png
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
