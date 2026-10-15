@@ -3,18 +3,14 @@
 ---
 @charset "utf-8";
 
-/* Built-in Sass modules you’ll likely use across partials */
+/* Theme modules: custom overrides follow all @use statements. */
 @use "sass:math";
 @use "sass:string";
 
-/* Configure your design tokens BEFORE loading any of your partials.
-   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
 @use "variables" with (
   $max-content-width: {{ site.max_width | default:  "930px" }}
 );
 
-/* Your project partials — convert these files to `@use "variables";`
-   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
 @use "themes";
 @use "layout";
 
@@ -49,7 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Publication titles: bold and theme-colored, including titles without links. */
-.publications ol.bibliography li .title {
+.publications ol.bibliography li .title,
+.publications ol.bibliography li .title .publication-title-text {
   font-weight: 700;
   color: var(--global-theme-color);
 }
@@ -92,12 +89,75 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75;
 }
 
+.post-header .post-description {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.post .section-heading-link {
+  color: inherit;
+}
+
 .profile .more-info {
+  font-family: inherit;
   font-size: 1rem;
   line-height: 1.75;
 }
 
-/* Mobile */
+.post > article .profile .more-info p {
+  display: block;
+  margin: 0;
+}
+
+/* Social icons below the portrait and address. */
+.profile .profile-social {
+  margin-top: 0.75rem;
+  text-align: left;
+}
+
+.profile .profile-social .contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+.profile .profile-social .contact-icons a img,
+.profile .profile-social .contact-icons a svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-bottom: 0;
+}
+
+.profile .profile-social .contact-note {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Publication bullets and inline arXiv icons. */
+.publications .publication-entry {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.publications .publication-bullet {
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+}
+
+.publications .publication-arxiv-link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.publications .publication-arxiv-link .ai {
+  color: #b31b1b;
+}
 
 /* Navigation typography */
 #navbar .navbar-nav .nav-link {
@@ -145,7 +205,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Shared mobile adjustments */
 @media (max-width: 767px) {
   .post > article,
-  .post-header .desc {
+  .post-header .desc,
+  .post-header .post-description {
     font-size: 1.0625rem;
     line-height: 1.7;
   }

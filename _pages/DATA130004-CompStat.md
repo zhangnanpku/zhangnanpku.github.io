@@ -38,9 +38,3 @@ nav: false
 - Week 15: EM Algorithm.
 - Week 16: Variational Inference.
 
-### Lecture video topics
-
-The video files were not included in the supplied website archive.
-
-- Monte Carlo Integration
-- Markov Chain Monte Carlo Methods

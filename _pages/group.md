@@ -9,9 +9,9 @@ nav_order: 3
 
 ### Graduate students
 
-<div class="table-wrap group-table" markdown="1" role="region" aria-label="Student placements" tabindex="0">
+<div class="table-wrap group-table" markdown="1" role="region" aria-label="Graduate student placements and current positions" tabindex="0">
 
-| Name | Cohort | Placement |
+| Name | Cohort | Placement / Current position |
 |:---|:---|:---|
 | Youtang He | SDS-26 | Current student |
 | Jiaheng Qu | SDS-24 | Current student |
@@ -26,9 +26,9 @@ nav_order: 3
 
 ### Undergraduate students
 
-<div class="table-wrap group-table" markdown="1" role="region" aria-label="Student placements" tabindex="0">
+<div class="table-wrap group-table" markdown="1" role="region" aria-label="Undergraduate student placements and current positions" tabindex="0">
 
-| Name          | Cohort  | Placement                                                    |
+| Name          | Cohort  | Placement / Current position                                 |
 | :------------ | :-----: | :----------------------------------------------------------- |
 | Youtang He    | SDS-22  | Master's student, Fudan University                           |
 | Jie Yin       | SDS-21  | Master's student, Fudan University                           |

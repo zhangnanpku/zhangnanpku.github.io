@@ -1,5 +1,13 @@
 ---
 ---
+{% assign paper_doi = entry.doi | default: '' | strip %}
+{% assign paper_url = entry.url | default: '' | strip %}
+{% assign paper_arxiv = entry.arxiv | default: '' | strip %}
+{% assign paper_volume = entry.volume | default: '' | strip %}
+{% assign paper_number = entry.number | default: '' | strip %}
+{% assign paper_pages = entry.pages | default: '' | strip %}
+{% assign paper_eid = entry.eid | default: '' | strip %}
+{% assign paper_note = entry.note | default: '' | strip %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -62,18 +70,18 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}" style="position: relative; padding-left: 1.75rem;">
-    <span aria-hidden="true" style="position: absolute; left: 0.75rem; top: 0;">•</span>
+  <div id="{{ entry.key }}" class="publication-entry {% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
+    <span class="publication-bullet" aria-hidden="true">•</span>
     <!-- Title: DOI when available; otherwise use the paper URL or arXiv. -->
     <div class="title">
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title }}</a>
-      {% elsif entry.url %}
-        <a href="{{ entry.url | escape }}">{{ entry.title }}</a>
-      {% elsif entry.arxiv %}
-        <a href="https://arxiv.org/abs/{{ entry.arxiv | escape }}">{{ entry.title }}</a>
+      {% if paper_doi != '' %}
+        <a href="https://doi.org/{{ paper_doi | escape }}">{{ entry.title }}</a>
+      {% elsif paper_url != '' %}
+        <a href="{{ paper_url | escape }}">{{ entry.title }}</a>
+      {% elsif paper_arxiv != '' %}
+        <a href="https://arxiv.org/abs/{{ paper_arxiv | escape }}">{{ entry.title }}</a>
       {% else %}
-        {{ entry.title }}
+        <span class="publication-title-text">{{ entry.title }}</span>
       {% endif %}
     </div>
     <!-- Author -->
@@ -176,7 +184,7 @@
     </div>
 
     {% assign inline_arxiv = false %}
-    {% if entry.key == "nanshan2026online" and entry.arxiv != blank %}
+    {% if entry.type == 'misc' and paper_arxiv != '' %}
       {% assign inline_arxiv = true %}
     {% endif %}
 
@@ -212,18 +220,27 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% assign display_pages = paper_pages | replace: '--', '–' %}
     <div class="periodical">
       {% if inline_arxiv %}
-        Preprint, {{ entry.year }}. <a href="https://arxiv.org/abs/{{ entry.arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv" style="display: inline-block; vertical-align: baseline; text-decoration: none;">
-          <span class="ai ai-arxiv ai-lg" aria-hidden="true" style="color: #b31b1b;"></span>
+        Preprint, {{ entry.year }}. <a class="publication-arxiv-link" href="https://arxiv.org/abs/{{ paper_arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv">
+          <span class="ai ai-arxiv ai-lg" aria-hidden="true"></span>
         </a>
       {% else %}
-        {{ periodical | strip }}
+        {{- periodical | strip -}}
+        {%- if entry.type == 'article' and paper_volume != '' -%}
+          , {{ paper_volume }}{% if paper_number != '' %}({{ paper_number }}){% endif %}
+        {%- endif -%}
+        {%- if paper_pages != '' -%}
+          , {% if proceedings contains entry.type %}pp. {% elsif paper_pages contains '--' %}pp. {% else %}Article {% endif %}{{ display_pages }}
+        {%- elsif paper_eid != '' -%}
+          , Article {{ paper_eid }}
+        {%- endif -%}
       {% endif %}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if paper_note != '' %}
+      <div class="periodical">{{ paper_note }}</div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -235,8 +252,8 @@
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
-      {% if entry.arxiv and inline_arxiv == false %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% if paper_arxiv != '' and inline_arxiv == false %}
+        <a href="https://arxiv.org/abs/{{ paper_arxiv | escape }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
