@@ -183,16 +183,8 @@
       {% endif %}
     </div>
 
-    {% assign publication_state = entry.pubstate | default: '' | strip | downcase %}
-    {% assign forthcoming_article = false %}
-    {% if entry.type == 'article' and publication_state == 'forthcoming' %}
-      {% assign forthcoming_article = true %}
-    {% endif %}
     {% assign inline_arxiv = false %}
     {% if entry.type == 'misc' and paper_arxiv != '' %}
-      {% assign inline_arxiv = true %}
-    {% endif %}
-    {% if forthcoming_article and paper_arxiv != '' %}
       {% assign inline_arxiv = true %}
     {% endif %}
 
@@ -230,10 +222,10 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     {% assign display_pages = paper_pages | replace: '--', '–' %}
     <div class="periodical">
-      {% if forthcoming_article %}
-        <em>{{ entry.journal }}</em>, to appear
-      {% elsif inline_arxiv %}
-        Preprint, {{ entry.year }}.
+      {% if inline_arxiv %}
+        Preprint, {{ entry.year }}. <a class="publication-arxiv-link" href="https://arxiv.org/abs/{{ paper_arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv">
+          <span class="ai ai-arxiv ai-lg" aria-hidden="true"></span>
+        </a>
       {% else %}
         {{- periodical | strip -}}
         {%- if entry.type == 'article' and paper_volume != '' -%}
@@ -244,11 +236,6 @@
         {%- elsif paper_eid != '' -%}
           , Article {{ paper_eid }}
         {%- endif -%}
-      {% endif %}
-      {% if inline_arxiv %}
-        <a class="publication-arxiv-link" href="https://arxiv.org/abs/{{ paper_arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv">
-          <span class="ai ai-arxiv ai-lg" aria-hidden="true"></span>
-        </a>
       {% endif %}
     </div>
     {% if paper_note != '' %}
