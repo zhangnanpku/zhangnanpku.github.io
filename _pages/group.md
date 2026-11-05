@@ -16,7 +16,7 @@ nav_order: 3
 | Youtang He | SDS-26 | Current student |
 | Jiaheng Qu | SDS-24 | Current student |
 | Yanshuo Liu | SDS-22 | ByteDance |
-| Muye Nanshan | SDS-19 | PhD student, Simon Fraser University |
+| [Muye Nanshan](https://mynanshan.github.io/) | SDS-19 | PhD student, Simon Fraser University |
 | Yunlu Chen | SDS-18 | PhD student, Northwestern University; Now Meta |
 | Jichen Yang | SDS-18 | Wanjia Asset |
 
