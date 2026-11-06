@@ -3,6 +3,7 @@
 {% assign paper_doi = entry.doi | default: '' | strip %}
 {% assign paper_url = entry.url | default: '' | strip %}
 {% assign paper_arxiv = entry.arxiv | default: '' | strip %}
+{% assign paper_code = entry.code | default: '' | strip %}
 {% assign paper_volume = entry.volume | default: '' | strip %}
 {% assign paper_number = entry.number | default: '' | strip %}
 {% assign paper_pages = entry.pages | default: '' | strip %}
@@ -232,7 +233,7 @@
           , {{ paper_volume }}{% if paper_number != '' %}({{ paper_number }}){% endif %}
         {%- endif -%}
         {%- if paper_pages != '' -%}
-          , {% if proceedings contains entry.type %}pp. {% elsif paper_pages contains '--' %}pp. {% else %}Article {% endif %}{{ display_pages }}
+          , {% if proceedings contains entry.type %}pp. {% elsif paper_pages contains '--' %}pp. {% endif %}{{ display_pages }}
         {%- elsif paper_eid != '' -%}
           , Article {{ paper_eid }}
         {%- endif -%}
@@ -240,6 +241,10 @@
       {% if entry.type == 'article' and paper_arxiv != '' %}
         <a class="publication-arxiv-link" href="https://arxiv.org/abs/{{ paper_arxiv | escape }}" title="View preprint on arXiv" aria-label="View preprint on arXiv">
           <span class="ai ai-arxiv ai-lg" aria-hidden="true"></span>
+        </a>
+      {% endif %}
+      {%- if paper_code != '' %}&nbsp;<a class="publication-code-link" href="{{ paper_code | escape }}" title="Source code" aria-label="View source code" style="display: inline-block; vertical-align: baseline; white-space: nowrap; text-decoration: none;">
+          <i class="fa-brands fa-github" aria-hidden="true" style="color: #6e5494; font-size: 1.2em;"></i>
         </a>
       {% endif %}
     </div>
@@ -294,9 +299,6 @@
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
