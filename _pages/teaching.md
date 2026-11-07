@@ -10,7 +10,7 @@ nav_order: 2
 ### Fudan University
 
 - **[Bayesian Modeling and Computation](/teaching/DATA737001-BMC.html)** (Graduate)  
-  Spring 2025-2026
+  Spring 2025–2026
 
 - **[Computational Statistics](/teaching/DATA130004-CompStat.html)**  
   Fall 2016–2025 · *University Excellent Course in English*
@@ -19,7 +19,7 @@ nav_order: 2
   Spring 2017–2024 · *University Excellent Course*
 
 - **Mathematical Statistics** (Honor)  
-  Spring 2022-2023
+  Spring 2022–2023
 
 - **Advanced Regression Analysis** (Honor)  
   Fall 2021
