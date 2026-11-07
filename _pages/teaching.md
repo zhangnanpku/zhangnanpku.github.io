@@ -9,19 +9,27 @@ nav_order: 2
 
 ### Fudan University
 
-<div class="table-wrap course-table" markdown="1" role="region" aria-label="Fudan University courses" tabindex="0">
+- **[Bayesian Modeling and Computation](/teaching/DATA737001-BMC.html)** (Graduat) · DATA737001  
+  Spring 2025-2026
 
-| Course | Term | Notes |
-| :--- | :--- | :--- |
-| [Bayesian Modeling and Computation](/teaching/DATA737001-BMC.html) (DATA737001), graduate | Spring 2025 | Course outline |
-| [Computational Statistics](/teaching/DATA130004-CompStat.html) (STAT30016; formerly DATA130004/130062) | Fall 2016–2025 | University Excellent Course in English |
-| [Time Series and Spatial Statistics](/teaching/DATA130013-TSSS.html) (DATA130013) | Spring 2017–2024 | University Excellent Course |
-| Mathematical Statistics (DATA130005.H), honors | Spring 2022, 2023 |  |
-| Advanced Regression Analysis (DATA130004.H), honors | Fall 2021 |  |
+- **[Computational Statistics](/teaching/DATA130004-CompStat.html)** · STAT30016/DATA130004/DATA130062  
+  Fall 2016–2025
 
-</div>
+  University Excellent Course in English
+  
+- **[Time Series and Spatial Statistics](/teaching/DATA130013-TSSS.html)** · DATA130013  
+  Spring 2017–2024 · University Excellent Course
+
+- **Mathematical Statistics** (Honor) · DATA130005.H  
+  Spring 2022, 2023
+
+- **Advanced Regression Analysis** (Honor) · DATA130004.H  
+  Fall 2021
 
 ### Other
 
-- **Advanced Statistics Theory** (DDA6030), graduate guest lecturer, CUHK-Shenzhen, Spring 2022 and 2023.
-- **Predictive Modeling**, professional training tutorial at UAES, Fall 2020–2024.
+- **Advanced Statistics Theory** (Graduate) · DDA6030  
+  Spring 2022 · Guest lecturer, [SDS@CUHK-Shenzhen](https://sds.cuhk.edu.cn/)
+
+- **Predictive Modeling** · Fall 2020–2024  
+  Professional training tutorial at [United Automotive Electronic Systems](https://www.bosch.com.cn/en/our-company/bosch-in-china/united-automotive-electronic-systems/)
