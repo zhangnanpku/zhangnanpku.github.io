@@ -21,7 +21,7 @@ nav_order: 2
   Spring 2017–2024 · University Excellent Course
 
 - **Mathematical Statistics** (Honor) · DATA130005.H  
-  Spring 2022, 2023
+  Spring 2022-2023
 
 - **Advanced Regression Analysis** (Honor) · DATA130004.H  
   Fall 2021
